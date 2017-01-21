@@ -1,0 +1,650 @@
+// main_screen
+
+.main_screen {
+	background-image: url(../img/main_bckgr.png);
+	width: 100%;
+	height: 806px;
+  position: relative;
+  .title {
+  	position: relative;
+  	z-index: 1;
+  	img {
+     display: block;
+     margin: 0 auto;
+     padding: 14% 20% 55px;
+     width: 100%;	
+   }
+ }
+ .particles_header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.offert {
+ display: block;
+ margin: 0 auto;
+ max-width: 960px;
+ ul {
+   padding: 0;
+   li {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+  }
+}
+}
+
+.scroll {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 45px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  transition: .5s;
+  cursor: pointer;
+  img{
+    margin: 10px 0 0 0;
+  }
+  &:hover {
+    opacity: .7;
+    transition: .5s;
+  }
+}
+}
+
+// map_1
+
+.map_1 {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background-image: url(../img/map_test.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #dbe3e6;
+    background-position: top center;
+    .country_name {
+      position: absolute;
+      color: #fff;
+      background-color: #DE7D97;
+      border-radius: 30px 30px 30px 0;
+      padding: 0;
+      right: 0;
+      width: 110px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 14px;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            bottom: -8px;
+            border: 10px solid transparent;
+            border-left: 10px solid #DE7D97;
+            border-top: 0px solid #DE7D97;
+          }
+           &#ukraine {
+            top: 258px;
+            left: -25px;
+            &::before {
+              content: '';
+              position: absolute;
+              height: 5px;
+              width: 100%;
+              border-radius: 50% 0 0 50%;              
+              background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,0));
+              top: 26px;
+              left: 1px;
+              box-shadow: 0 0 12px 2px rgba(56, 99, 113, .2);;
+            }             
+          }
+           &#russia {
+            top: 161px;
+            left: 673px;
+            width: 153px;
+            padding: 5px 0;
+            &::before {
+              content: '';
+              position: absolute;
+              height: 5px;
+              width: 100%;
+              border-radius: 50% 0 0 50%;              
+              background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,0));
+              top: 43px;
+              left: 0;
+              box-shadow: 0 0 12px 2px rgba(56, 99, 113, .2);;
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              left: 0px;
+              bottom: -13px;
+              border: 10px solid transparent;
+              border-left: 5px solid #DE7D97;
+              border-top: 10px solid #DE7D97;
+            }            
+          }    
+           &#kazakhstan {
+            top: 231px;
+            left: 327px;
+            width: 139px;
+            padding: 4px 0;
+            &::before {
+              content: '';
+              position: absolute;
+              height: 5px;
+              width: 100%;
+              border-radius: 50% 0 0 50%;              
+              background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,0));
+              top: 33px;
+              left: 1px;
+              box-shadow: 0 0 12px 2px rgba(56, 99, 113, .2);;
+            }            
+          }    
+           &#kyrgyzstan {
+            top: 292px;
+            left: 406px;
+            width: 145px;
+            padding: 2px 0;
+            z-index: 0;
+            border-radius: 35px;
+            &::before {
+              content: '';
+              position: absolute;
+              height: 16px;
+              width: 20%;
+              border-radius: 0 50px 50px 0;
+              background: rgba(0, 0, 0, 0.4);
+              top: 1px;
+              left: 0px;
+              box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.7);
+              z-index: 1;
+            }           
+
+          }  
+           &#turkmenistan {
+            top: 313px;
+            left: 214px;
+            z-index: 9;
+            position: absolute;
+            &::before {
+              content: '';
+              position: absolute;
+              height: 5px;
+              width: 100%;
+              border-radius: 50% 0 0 50%;              
+              background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,0));
+              top: 26px;
+              left: 1px;
+              box-shadow: 0 0 12px 2px rgba(56, 99, 113, .2);;
+            }              
+          }  
+           &#tajikistan {
+            top: 335px;
+            left: 382px;
+            width: 138px;
+            padding: 3px;
+            border-radius: 35px;
+            z-index: 9;
+            &::before {
+              content: '';
+              position: absolute;
+              height: 16px;
+              width: 20%;
+              border-radius: 0 50px 50px 0;
+              background: rgba(0, 0, 0, 0.4);
+              top: 16px;
+              left: -20px;
+              box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.7);
+              z-index: 0;
+            }             
+            &::after {
+              content: '';
+              position: absolute;
+              left: -25px;
+              bottom: 0;
+              border: 0; 
+              border-right: none;
+            }              
+          }  
+           &#uzbekistan {
+            top: 283px;
+            left: 208px;             
+          }  
+           &#azerbaijan {
+              top: 347px;
+              left: 128px;
+              width: 122px;
+              padding: 2px 0;
+              border-radius: 0 35px 35px 35px;
+              z-index: 9;
+              &::after {
+                content: '';
+                position: absolute;
+                left: 0px;
+                bottom: 20px;
+                border: 10px solid transparent;
+                border-bottom: 9px solid #DE7D97;
+                border-left: 3px solid #DE7D97;          
+              }   
+              &::before {
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 100%;
+                border-radius: 50%;              
+                background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.2));
+                top: 30px;
+                left: 0px;
+                box-shadow: 0 0 12px 2px rgba(56, 99, 113, .2);;
+              }                           
+          } 
+  
+           &#armenia {
+            top: 325px;
+            left: -135px;
+            border-radius: 30px;
+            &::after {
+              content: '';
+              position: absolute;
+              left: 94px;
+              bottom: 4px;
+              border: 6px solid transparent;
+              border-left: 28px solid #DE7D97;
+            }  
+              &::before {
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 98%;
+                border-radius: 50%;              
+                background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.2));
+                top: 30px;
+                left: 0px;
+                box-shadow: 0 0 12px 2px rgba(56, 99, 113, .2);;
+              }                            
+          }  
+           &#georgia {
+            top: 293px;
+            left: -135px;
+            border-radius: 30px 30px 0 30px;
+            &::after {
+              content: '';
+              position: absolute;
+              left: 90px;
+              bottom: -8px;
+              border: 10px solid transparent; 
+              border-top: 10px solid #DE7D97; 
+              border-right: 10px solid #DE7D97;
+            }     
+            &::before {
+              content: '';
+              position: absolute;
+              height: 5px;
+              width: 100%;
+              border-radius: 0 50% 50% 0;              
+              background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3));
+              top: 25px;
+              left: 0;
+              box-shadow: 0 0 12px 2px rgba(56, 99, 113, .1);;
+            }                     
+          }  
+           &#belarus {
+            top: 228px;
+            left: -270px;
+            border-radius: 30px 30px 0 30px;
+            &::after {
+              content: '';
+              position: absolute;
+              left: 90px;
+              bottom: -8px;
+              border: 10px solid transparent; 
+              border-top: 10px solid #DE7D97; 
+              border-right: 10px solid #DE7D97;
+            }
+            &::before {
+              content: '';
+              position: absolute;
+              height: 5px;
+              width: 100%;
+              border-radius: 50% 0 0 50%;              
+              background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,0));
+              top: 31px;
+              left: 19px;
+              box-shadow: 0 0 12px 2px rgba(56, 99, 113, .2);;
+            }            
+
+          }                                                                            
+    }
+    .mask {
+      display: none;
+    }
+
+}
+
+// carousel
+
+.carousel {
+    height: 175px;
+    max-width: 992px;
+    display: block;
+    margin: 0 auto;
+  .title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-transform: uppercase;
+    img {
+      position: absolute;
+      margin-left: -47px;
+      margin-top: 2px;      
+    }
+    h2 {
+      font-weight: 600;
+      color: $mainColor;
+    }
+  }
+  .carousel-inner {
+      overflow: hidden;
+      max-width: 800px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      display: inline;
+      padding: 0;
+      position: absolute;
+      left: 0;
+      right: 0;      
+  }
+  ul {
+     li {
+      list-style: none;
+      display: inline-block;
+      &.pr_t {
+        font-size: 24px;
+        font-weight: 600;
+        color: $mainColor;
+      }
+    }  
+  }
+  .price {
+    background-image: url(../img/color.png);
+    width: 132px;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 51px;
+    color: $mainColor;
+    .pr {
+      background-color: #fff;
+      padding: 0;
+      border-radius: 28px;
+      margin: 4px 3px;
+      display: block;
+      width: 125px;
+      font-size: 30px;
+    }
+  }
+.carousel-control {
+    width: auto;
+    height: 62px
+  }  
+}
+
+// partnership 
+
+.partnership {
+  background-image: url(../img/bckg_middle.png);
+  width: 100%;
+  height: 486px;
+  position: relative;
+  .left {
+    width: 50%;
+    height: 486px;
+    float: left;
+    background: linear-gradient(to top, rgba(13,46,66,.53), rgba(228,145,160,.53));
+    .trafled {
+      color: #fff;
+      font-size: 42px;
+      float: right;
+      margin-top: 212px;
+      margin-right: 133px;
+      font-weight: 600;      
+    }
+
+  }
+  .right {
+    width: 50%;
+    float: right;
+    background-color: rgba(80,102,117,.53);
+    height: 486px;
+    .partn_text {
+      color: #fff;
+      font-size: 20px;
+      float: left;
+      margin-top: 195px;
+      margin-left: 133px;        
+    }
+  }
+  .hands {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    margin-top: -42px;    
+  }
+  .particles_partnership {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 486px;
+  }
+}
+
+// submition
+
+.submition {
+    height: 569px;
+    width: 100%;
+    background-image: url(../img/bot.png);
+    position: relative;
+    background-repeat: no-repeat;
+  .particles_submition {
+    position: absolute;
+    z-index: 1;
+    opacity: .4;
+    height: 571px;
+    width: 100%;    
+    top: 0;
+  }
+  h2 {
+      font-size: 35px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      padding-top: 87px;
+      padding-bottom: 126px;
+      text-transform: uppercase;
+    }
+  .subm_service {
+    display: block;
+    color: #fff;
+    li {
+      list-style: none;
+      text-align: center;
+      font-size: 20px; 
+      img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// pre_footer
+
+.pre_footer {
+  background: #31646F;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  h2 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 70px;
+    font-weight: 600;
+    font-size: 35px;
+  }
+  img {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+// with uzbekistan
+.with_us {
+    height: 520px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-image: url(../img/map_2_test.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    .title {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-size: 35px;
+      text-transform: uppercase;
+        img {
+          position: absolute;
+          margin-left: -47px;
+          margin-top: 2px;      
+        }
+        h2 {
+          font-weight: 600;
+          color: $mainColor;
+          text-align: center;
+        }
+    }
+    .countries_wrapper {
+      height: 480px;
+      width: 200px;
+      background: linear-gradient(to top, rgba(0, 50, 69, .3), rgba(254, 126, 159, .3));
+      position: absolute;
+      bottom: 0;
+      left: -417px;
+      right: 0;
+      margin: 0 auto;
+      padding: 15px 0;
+      .country {
+        background: #fff;
+        border-radius: 30px 30px 30px 0;
+        width: 167px;
+        margin: 0 auto;
+        margin-top: 12px;
+        padding: 3px 20px;
+        position: relative;
+        font-size: 12px;
+        cursor: pointer;
+        transition: .5s; 
+        &:hover {
+          transition: .5s;
+          transform: scale(1.1);
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0px;
+          bottom: -7px;
+          border: 10px solid transparent;
+          border-left: 10px solid #fff;
+          
+        }         
+      }
+    }
+  .flags {
+    position: relative;
+    .flag {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      transition: .5s;
+      filter: grayscale(100%);
+      &.flag_1 {
+        top: 178px;
+        left: -107px;
+      }
+      &.flag_2 {
+        top: 248px;
+        left: -136px;
+      }
+      &.flag_3 {
+        top: 264px;
+        left: 8px;
+      }
+      &.flag_4 {
+        top: 283px;
+        left: 125px;
+      }
+      &.flag_5 {
+        top: 265px;
+        left: 294px;
+      }
+      &.flag_6 {
+        top: 140px;
+        left: 164px;
+      }
+      &.flag_7 {
+        top: 216px;
+        left: -41px;
+      }
+      &.flag_8 {
+        top: 202px;
+        left: 220px;
+      }
+      &.flag_9 {
+        top: 267px;
+        left: 197px;
+      }
+      &.flag_10 {
+        top: 288px;
+        left: 39px;
+        z-index: 1;
+      }
+      &.flag_11 {
+        top: 288px;
+        left: 1px;
+        z-index: 0;
+      }
+      &.flag_12 {
+        top: 291px;
+        left: 235px;
+      }
+
+    }
+  }
+}    
+

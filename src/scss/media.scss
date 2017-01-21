@@ -1,0 +1,311 @@
+@media screen and (max-width: 991px) {
+  .main_screen{
+    height: 580px;
+    transition: .5s;
+  }  
+  .footer {
+    background: #31646F;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    border-top: 1px solid #83A2A8;
+    .info_1 {
+      padding: 30px 0 0;
+      float: none;
+      text-align: center;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 16px; 
+        &:hover {
+          text-decoration: none;
+        }
+        &.email {
+          margin-right: 40px;
+        }
+      }
+    } 
+    .info_2 {
+        float: none;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 16px;
+        padding: 19px 0;
+        text-align: center;    
+      .copyright {
+
+      }
+      .date {
+
+      }
+    }
+  }
+// map 
+
+.map_1 {
+  height: 470px;
+
+  .country_name {
+    position: relative;
+    top: 35px !important;
+    left: 0 !important;
+    margin-bottom: 10px;
+    width: 80% !important;
+    padding: 5px 10px !important;
+    border-radius: 30px !important;
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,.5);
+    z-index: 1 !important;
+    &::after {
+      display: none
+    }  
+    &::before {
+      display: none
+    }           
+  }
+  .mask {
+      display: block;
+      width: 100%;
+      height: 470px;
+      background-color: rgba(0,0,0,.3);
+      position: absolute;
+      top: 0;
+      z-index: 0;
+
+    }
+}  
+
+}
+
+@media screen and (max-width: 1040px) {
+  .mobile-menu {
+    display: block; }
+    .mobile-menu + .top-nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: rgba(255,255,255,.1);
+      z-index: 10;
+      width: 50%; }
+      .mobile-menu + .top-nav li {
+        float: none;
+        margin: 0;
+        padding: 10px;
+        border: none;
+        &:hover {
+          background: none;
+        } 
+        a {
+          color: #fff;
+        }
+      }
+      .mobile-menu + .top-nav a span {
+        left: auto;
+        right: 0; }
+        .mobile-menu.active + .top-nav {
+          display: block; } 
+
+
+
+
+        }
+
+
+        @media screen and (max-width: 769px) {
+          .with_us .flags .flag {
+            display: none;
+          }
+
+          .with_us .countries_wrapper {
+            height: 444px;
+            padding: 0;
+            width: 100%;
+            left: 0;
+          }
+
+          .with_us {
+              .title {
+              img {
+                display: none;     
+            }          
+            }      
+          }            
+          .main_screen{
+            .offert {
+              max-width: 100%;
+              ul {
+                li {
+                  font-size: 12px;
+                  padding: 13px 0;
+                }
+              }
+            }
+            .title img {
+              padding: 125px 20px 25px;  
+            } 
+          }
+
+          .carousel {
+            height: 275px;
+            .price {
+              background-image: none;
+              width: 132px;
+              background-repeat: no-repeat;
+              text-align: center;
+              height: 51px;
+              margin: 0 auto;
+              .pr {
+                border: 2px solid #BA95A5;
+              }
+
+            }
+            .title {
+              img {
+                display: none;     
+              }
+            }
+            ul{
+              li {
+                display: block;
+                &.pr_t {
+                  padding: 0 40px;
+                }
+              }
+            }
+          }  
+
+
+          .partnership {
+            background-image: url(../img/bckg_middle.png);
+            width: 100%;
+            height: 486px;
+            position: relative;
+            .left {
+              width: 100%;
+              height: 243px;
+              float: left;
+              background: linear-gradient(to top, rgba(13,46,66,.53), rgba(228,145,160,.53));
+              .trafled {
+                color: #fff;
+                font-size: 42px;
+                float: none;
+                margin-top: 96px;
+                margin-right: 0;
+                font-weight: 600;
+                text-align: center;  
+              }
+
+            }
+            .right {
+              width: 100%;
+              float: right;
+              background-color: rgba(80,102,117,.53);
+              height: 243px;
+              .partn_text {
+                color: #fff;
+                font-size: 20px;
+                float: none;
+                margin-top: 85px;
+                margin-left: 0;
+                text-align: center;       
+              }
+            }
+            .hands {
+              position: absolute;
+              z-index: 1;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              top: 50%;
+              margin-top: -42px;    
+            }
+          }
+
+        }
+
+@media screen and (max-width: 575px) {
+.submition {
+  background-image: url(../img/bot.png);
+  background-size: cover;
+  height: 800px;
+  background-repeat: no-repeat; 
+
+  .particles_submition {
+  }
+  h2 {
+      font-size: 35px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      padding-top: 87px;
+      padding-bottom: 30px;
+    }
+  .subm_service {
+    display: block;
+    color: #fff;
+    li {
+      list-style: none;
+      text-align: center;
+      font-size: 20px; 
+      margin-bottom: 30px;
+      img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+}
+
+@media screen and (max-width: 554px) {
+  .with_us {
+      .title {
+        margin-top: 7px;         
+    }      
+  }    
+}
+
+        @media screen and (max-width: 470px) {
+
+
+          .pre_footer {
+            h2 {
+              padding: 30px 10px 0 10px;
+            }
+              img {
+              width: 257px;
+            }
+          }
+
+          .footer {
+            .info_1 {
+                .email {
+                  width: 100%;
+                  display: block;
+                }
+            }
+          }
+
+
+
+          .mobile-menu + .top-nav {
+            width: 100%; 
+          }
+        }
+
+
+        @media screen and (max-width: 360px) {
+          .main_screen {
+            .offert {
+              ul {
+                li {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+        
